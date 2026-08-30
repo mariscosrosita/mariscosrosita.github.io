@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mariscos Rosita</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/styles-w3.css">
+<link rel="stylesheet" href="fonts/ysabeau_sc/static/">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Ysabeau SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-color: #F4CA3B;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/mariscos-rosita.png");
+  min-height: 80%;
+}
+</style>
+</head>
+<body>
+
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-green w3-wide w3-padding w3-card">
+    <a href="#menu" class="w3-bar-item w3-button w3-hover-green"><span class="w3-medium"><b>MARISCOS ROSITA</b></span></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right">
+      <a href="#contact" class="w3-bar-item w3-button w3-hover-green"><span class="w3-medium"><i class="fa fa-whatsapp fa-lg"></i> <b>415 119 1741</b></span></a>
+    </div>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-padding w3-center">
+      <img style="max-height: 500px;" src="images/mariscos-rosita-logo.png" /></span>
+    <p><a href="#menu" class="w3-button w3-xlarge w3-indigo w3-round w3-hover-amber">NUESTRO MENÚ</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-indigo w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+    <h1 class="w3-center w3-xlarge w3-text-indigo">MARISCOS ROSITA</h1>
+    <h2 class="w3-center w3-xxlarge"><em>AL ESTILO ESPAÑOL</em></h2>
+    <div class="w3-row w3-center">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Mariscos');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-amber w3-hover-text-indigo w3-round-medium"><h2 class="w3-xlarge w3-hide-small">MARISCOS</h2><h2 class="w3-large w3-hide-large w3-hide-medium">MARISCOS</h2></div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Antojitos');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-amber w3-round-medium w3-hover-text-indigo"><h2 class="w3-xlarge w3-hide-small">ANTOJITOS</h2><h2 class="w3-large w3-hide-large w3-hide-medium">ANTOJITOS</h2></div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Paella');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-amber w3-round-medium w3-hover-text-indigo"><h2 class="w3-xlarge w3-hide-small">PAELLA</h2><h2 class="w3-large w3-hide-medium w3-hide-large">PAELLA</h2></div>
+      </a>
+    </div>
+    <div id="Mariscos" class="w3-container menu w3-padding-32 w3-pale-blue w3-text-indigo">
+      <p class="w3-xlarge"><b>CÓCTEL DE CAMARÓN Y PULPO</b>
+        <span class="w3-right w3-tag w3-cobalt w3-round">G $120</span>&nbsp;
+        <span class="w3-right w3-tag w3-blue w3-round">M $100</span>&nbsp;
+        <span class="w3-right w3-tag w3-light-blue w3-text-indigo w3-round">CH $80</span></p>
+      <hr>
+   
+      <p class="w3-xlarge"><b>SOPA DE MARISCOS</b> <span class="w3-right w3-tag w3-cobalt w3-round">$110</span></p>
+      <hr>
+      
+      <p class="w3-xlarge"><b>FILETE DE PESCADO</b> 
+        <span class="w3-tag w3-xlarge w3-large w3-green w3-round">Con Ensalada</span>
+        <span class="w3-right w3-tag w3-cobalt w3-round">$110</span></p>
+      <p class="w3-xlarge w3-text-blue-grey">Empanizado ó Enharinado.</p>
+      <hr>
+
+      <p class="w3-xlarge"><b>MOJARRA</b> 
+        <span class="w3-tag w3-xlarge w3-green w3-round">Con Ensalada</span>
+        <span class="w3-right w3-tag w3-cobalt w3-round">$130</span></p>
+      <hr>
+
+      <p class="w3-xlarge"><b>CAMARÓN Y PULPO AL AJILLO</b> 
+        <span class="w3-tag w3-amber w3-text-indigo w3-round"><b>¡En Cazuela!</b></span>
+        <span class="w3-right w3-tag w3-cobalt w3-round">$140</span></p>
+      <hr>
+
+      <p class="w3-xlarge"><b>CAMARONES</b> 
+        <span class="w3-tag w3-xlarge w3-green w3-round">Con Ensalada</span>
+        <span class="w3-right w3-tag w3-cobalt w3-round">$140</span></h1>
+      <p class="w3-xlarge w3-text-blue-grey">Empanizados ó Enharinados.</p>
+      <hr>
+      <div class="w3-center">
+      <p class="w3-center w3-large w3-button w3-pale-blue w3-round"><a href="javascript:void(0)" onclick="openMenu(event, 'Antojitos');" id="myLink"><span class="w3-center w3-button w3-text-indigo"><i class="fa fa-chevron-right"></i></span></a></p>
+      </div>
+    </div>
+
+    <!--- Antojitos --->
+
+    <div id="Antojitos" class="w3-container menu w3-padding-32 w3-white w3-text-indigo">
+      <p class="w3-xlarge"><b>TORTAS</b>
+        <span class="w3-right w3-tag w3-cobalt w3-round">$60</span></p>
+        <p class="w3-xlarge w3-text-blue-grey">De camarón y pulpo</p>
+      <hr>
+   
+      <p class="w3-xlarge"><b>TOSTADAS</b></p>
+        <p class="w3-xlarge w3-text-blue-grey">De camarón y pulpo <span class="w3-right w3-tag w3-cobalt w3-round">$35</span></p>
+        <p class="w3-xlarge w3-text-blue-grey">De camarón y pulpo al ajillo <span class="w3-right w3-tag w3-cobalt w3-round">$40</span></p>
+      <hr>
+
+      <p class="w3-xlarge"><b>QUESADILLAS</b>
+        <span class="w3-tag w3-xlarge w3-amber w3-text-indigo w3-round"><b>Orden de 3</b></span>
+        </p>
+        <p class="w3-xlarge w3-text-blue-grey">Con camarón, filete de pescado, y pulpo <span class="w3-right w3-tag w3-cobalt w3-round">$75</span></p>
+      <hr>
+      <div class="w3-center">
+      <p class="w3-center w3-large w3-button w3-white w3-round"><a href="javascript:void(0)" onclick="openMenu(event, 'Mariscos');" id="myLink"><span class="w3-center w3-button w3-text-indigo"><i class="fa fa-chevron-left"></i></span></a></p>
+       <p class="w3-center w3-large w3-button w3-white w3-round"><a href="javascript:void(0)" onclick="openMenu(event, 'Paella');" id="myLink"><span class="w3-center w3-button w3-text-indigo w3-right"><i class="fa fa-chevron-right"></i></span></a></p>
+     </div>
+    </div>
+<!--- Paella --->
+<div id="Paella" class="w3-container menu w3-padding-32 w3-amber w3-text-indigo">
+   
+      <p class="w3-xlarge w3-center"><b>LOS FINES DE SEMANA</b></p>
+      <p class="w3-xlarge w3-center"><b>Y BAJO PEDIDO PARA TUS EVENTOS ESPECIALES</b> </p>
+      <div class="w3-center">
+      <p class="w3-center w3-large w3-button w3-amber w3-round"><a href="javascript:void(0)" onclick="openMenu(event, 'Antojitos');" id="myLink"><span class="w3-center w3-button w3-text-indigo"> <i class="fa fa-chevron-left"></i></span></a></p>
+    </div>
+    </div>
+
+    <br>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-green w3-padding-32 w3-xxlarge" id="contacto">
+    <p class="w3-xlarge w3-amber w3-text-indigo w3-padding"><b>¡Ordena paella para tus fiestas!</b></p>
+  <p class="w3-xlarge">Entrega a domicilio en la Esmeralda, SMA.</p>
+  <p class="w3-xlarge"><i class="fa fa-whatsapp fa-lg"></i> 415 119 1741</p>
+
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-light-blue", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-light-blue";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
